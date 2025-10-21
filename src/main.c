@@ -415,7 +415,7 @@ int main(void)
 	}
 
 	// BLE stuff
-	int ble_result = bt_enable(bt_ready);
+	int ble_result = bt_enable(/*bt_ready*/NULL);
     printk("bt_enable: %d \n", ble_result);
 
 	ble_result = bt_conn_cb_register(&conn_callbacks);
